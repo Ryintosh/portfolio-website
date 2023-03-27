@@ -16,14 +16,15 @@ with left_column:
     st.write("""
     
                 I am passionate about cloud automation, incident management, and monitoring to improve systems reliability.
-                Cloud automation for me isn't just a task to implement into our production enviornment, but rather a goal
-                to eliminate human error and produce results at a higher rate while maintaing accuracy. I have utilized cloud
-                automation in montioring, as I found in this area that this was of the utmost importance. Monitoring effectively 
+                Cloud automation for me isn't just a task to implement into our production environment, but rather a goal
+                to eliminate human error and produce results at a higher rate while maintaining accuracy. I have utilized cloud
+                automation in monitoring, as I found in this area that this was of the utmost importance. Monitoring effectively
                 with the right tools allows for quick response times and an accurate understanding of what is happening in an
                 incident. Also having dashboards and alerts automatically created for new resources introduced into an environment helps significantly
-                decrease the manual work and time consumed by employees, but it also allows the business to make better cost analysis on their resources
-                by seeing their utilization. My goal is to provide to a business visibility into their systems, as one can not fix, if they
-                do not know what to fix.
+                decrease the manual work and time consumed by employees, but it also allows the business to make better cost analyses on their resources
+                by seeing their utilization. My goal is to provide a business visibility into their systems, as one can only fix if they
+                know what to fix.
+
     
     
     """)
@@ -151,22 +152,23 @@ st.write("----")
 
 
 
+githubcolumn, linkedincolumn, youtubecolumn = st.columns(3)
 
-
-
-content = """
-<a href='#' id='github'><img width='4%' src="https://th.bing.com/th/id/OIP.D_Gm8IGCvkqmOgtU2hueVwHaHS?pid=ImgDet&rs=1" hspace="50" class = "center"></a>
-<a href='#' id='linkedin'><img width='4%' src='https://yt3.ggpht.com/-CepHHHB3l1Y/AAAAAAAAAAI/AAAAAAAAAAA/Z8MftqWbEqA/s900-c-k-no/photo.jpg' hspace="50" class = "center"></a>
-<a href='#' id='youtube'><img width='4%' src='https://th.bing.com/th/id/OIP.BzZJPmzidrI77XpMNfnBFwHaHa?pid=ImgDet&rs=1' hspace="50" class = "center"></a>
+with githubcolumn:
+    content = """
+<a href="https://github.com/Ryintosh" id='github'><img width='10%' src="https://th.bing.com/th/id/OIP.D_Gm8IGCvkqmOgtU2hueVwHaHS?pid=ImgDet&rs=1" hspace="100" class = "center"></a>
     """
+    st.markdown(content, unsafe_allow_html = True)
+with linkedincolumn:
+    content = """
+<a href='https://www.linkedin.com/in/ryanmac12356/' id='linkedin'><img width='10%' src='https://yt3.ggpht.com/-CepHHHB3l1Y/AAAAAAAAAAI/AAAAAAAAAAA/Z8MftqWbEqA/s900-c-k-no/photo.jpg' hspace="100" class = "center"></a>
+    """
+    st.markdown(content, unsafe_allow_html = True)
 
-
-click = click_detector(content)
-if click == "github":
-    webbrowser.open_new_tab("https://github.com/Ryintosh")
-elif click == "linkedin":
-    webbrowser.open_new_tab("https://www.linkedin.com/in/ryanmac12356/")
-elif click == "youtube":
-    webbrowser.open_new_tab("google.com")
+with youtubecolumn:
+    content = """
+<a href='google.com' id='youtube'><img width='10%' src="/pictures/languages.jpg" alt = "test"></a>
+    """
+    st.markdown(content, unsafe_allow_html = True)
 
 
