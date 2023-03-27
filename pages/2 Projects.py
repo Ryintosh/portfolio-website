@@ -1,16 +1,17 @@
 import streamlit as st
-import requests
-from streamlit_lottie import st_lottie
-from st_click_detector import click_detector
-import webbrowser
-from github import Github
 
 
-username = "Ryintosh"
 
-g = Github()
-# get that user by username
-user = g.get_user(username)
+owner = "Ryintosh"
+branch = "main"
+repoName = ["portfolio-website", "temp", "temp"]
 
-for repo in user.get_repos():
-    st.write(repo)
+
+portfoliowebsite, tab2, tab3 = st.tabs(tabs = repoName)
+
+with portfoliowebsite:
+    with open("ReadMes/portfolio-website.md") as f:
+        s = f.read()
+    st.markdown(s)
+
+
