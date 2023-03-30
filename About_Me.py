@@ -5,6 +5,7 @@ from st_click_detector import click_detector
 import webbrowser
 
 
+
         
 st.set_page_config(page_title="Ryan's Portfolio", page_icon=":tada", layout = 'wide')
 
