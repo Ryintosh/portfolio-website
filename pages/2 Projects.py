@@ -15,8 +15,8 @@ for repo in user.get_repos():
     repoName.append(repo.name)
 
 
-repoName.append("test")
 temp = deepcopy(repoName)
+repoName.remove("Ryintosh")
 
 
 def getReadMe(repo,owner,branch):
@@ -28,8 +28,8 @@ repoName = st.tabs(repoName)
 
 i=0
 while i <= len(repoName) - 1:
-    with repoName[i]:
-        response = getReadMe(temp[i],owner,branch)
-        st.write(temp[i])
-        st.write(response.text)
-    i = i + 1
+    if temp[i] != "Ryintosh":
+        with repoName[i]:
+            response = getReadMe(temp[i],owner,branch)
+            st.write(response.text)
+        i = i + 1
