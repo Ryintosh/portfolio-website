@@ -23,7 +23,8 @@ def getReadMe(repo,owner,branch):
     test = requests.get(url = f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/README.md")
     return test
 
-
+st.write("""Hi there! below you will be able to 
+view all of my repositories and their ReadMes. Click on a tab with the repository name to view that repository's ReadMe""")
 repoName = st.tabs(repoName)
 
 i=0
