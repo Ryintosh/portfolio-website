@@ -153,22 +153,13 @@ githubcolumn, linkedincolumn, youtubecolumn = st.columns(3)
 
 with githubcolumn:
     content = """
-<a href="https://github.com/Ryintosh" id='github'><img width='20%' src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vhv.rs%2Fviewpic%2FhbihmoR_github-icon-png-download-github-logo-transparent-png%2F&psig=AOvVaw1g304-QmLJFFOqVhN_3F86&ust=1680316677795000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCODB3cyRhf4CFQAAAAAdAAAAABAD" hspace="100" class = "center"></a>
+<a href="https://github.com/Ryintosh" id='github'><img width="64" height="64" src="https://icons-for-free.com/iconfiles/png/512/code+collaboration+github+network+round+social+icon-1320086084536018107.png" alt = "GitHub" hspace="100" class = "center"></a>
     """
-    st.markdown(content, unsafe_allow_html = True)
+    st.write(content, unsafe_allow_html = True)
 with linkedincolumn:
     content = """
-<a href='https://www.linkedin.com/in/ryanmac12356/' id='linkedin'><img width='20%' src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fpng%2F18930587-linkedin-logo-png-linkedin-icon-transparent-png&psig=AOvVaw2VIt4iASaoHhhcXbXRro1I&ust=1680316715104000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCKje9dqRhf4CFQAAAAAdAAAAABAD' hspace="100" class = "center"></a>
+<a href='https://www.linkedin.com/in/ryanmac12356/' id='linkedin'><img width='64' height='64' src="https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-logo-png-transparent.png" alt='LinkedIn' hspace="100" class = "center"></a>
     """
-    st.markdown(content, unsafe_allow_html = True)
-
-with youtubecolumn:
-    """
-    content = """
-#<a href='google.com' id='youtube'><img width='10%' src="/pictures/languages.jpg" alt = "test"></a>
-    """
-
-    st.markdown(content, unsafe_allow_html = True)
-    """
+    st.write(content, unsafe_allow_html = True)
 
 
