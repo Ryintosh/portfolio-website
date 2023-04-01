@@ -1,4 +1,4 @@
 [theme]
 base = "dark"
 primaryColor = "orange"
-backgroundColor = "grey"
+backgroundColor = "#696969"
