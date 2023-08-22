@@ -42,10 +42,14 @@ with left_columnhv:
     """
 
     
-    - Collaborated with a Multinational Pharmaceutical Industry to provide incident management, deployments, and cloud automation. 
+    - Collaborated with a Multinational Pharmaceutical Industry to provide incident management, deployments, cloud automation, and change management. 
     - Developed a dashboard as code script, which created new dashboards for new resources introduced into production and updated all pre-existing dashboards. 
     - Monitored production utilizing Azure Data Explorer, Azure App Insights, and Azure EventHub Namespaces. 
     - Created standard operating procedures for groups to update pre-existing dashboards with a JSON file using Azure CLI, as there is no current functionality to do this using Azure Portal.
+    - Constructed Change Requests and presented in Change Advisory Boards the business impact of said changes.
+    - Lead the development of alerts and dashboards for production.
+    - Worked with a team to develop an Auth service utilizing Keycloak and Springboot
+    - Architectured an Azure environment for a website contributing to the creation of a CI/CD pipeline making the Springboot application into an image hosted on an Azure Container Registry
 
     """)
 
@@ -86,6 +90,7 @@ with tab1:
         - CI/CD development
         - Version Control
         - Infrastructure Orchestration
+        - Change Management
         """)
 
     with left:
@@ -115,9 +120,10 @@ with tab3:
         - Kusto
         - SQL
         - Terraform
-        - Azure CLI
+        - Microsoft Azure CLI
         - Amazon Web Services CLI
         - Kubectl
+        - Bash
         """)
 
     with left:
@@ -131,12 +137,15 @@ with tab4:
         - Jenkins
         - Azure Devops
         - Github
+        - Github Actions
+        - Chef Infra
         - Prometheus
         - Grafana
-        - Azure Monitor
-        - AWS Cloudwatch
+        - Microsoft Azure
+        - Amazon Web Services
         - Kubernetes
         - Loki
+        - Docker
         """)
 
     with left:
