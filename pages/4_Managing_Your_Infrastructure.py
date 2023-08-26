@@ -6,7 +6,7 @@ st.write("""
          Managing your infrastructure takes a lot of work, but you know what else does? An incident.
          """)
 
-incident,change,problem= st.tabs(["Incident Management", "Change Management", "Problem Management"])
+incident,change,problem= st.tabs(["Incident Management", "Change Management"])
 
 with incident:
     st.write("""Incident Management is relatively a simple concept, when your services are degrading or down try to bring it back to normal.
@@ -16,7 +16,7 @@ with incident:
                 then calling an incident to all impacted teams to resolve the incident is the next priority. Releasing information to stakeholders and impacted
                 teams in this process is a must as they can't continue business as usual actitvies without knowing the progress on the incident. Once the incident is resolved
                 inform impacted teams and stakeholders of it, but resolution also includes verifying. Once this is accomplished, the job is not done yet. We need
-                to do a Root Cause Analysis on the incident. What caused this incident to occur? What steps can we take to improve the Mean Time To Resolution (MTTR)?
+                to do a Root Cause Analysis (RCA) on the incident. What caused this incident to occur? What steps can we take to improve the Mean Time To Resolution (MTTR)?
                 What did we do during this process to resolve the incident? There are many more questions you can ask, however these prove the point that an incident
                 can prove to be a great learning experience on what to watch out for and how to deal with your infrastructure better so customers aren't imapcted.
              
@@ -29,9 +29,20 @@ with change:
              A stable environment can easily be disrupted by changes as the results may not be known from implementing it. 
              However, the art of change management isn’t to eliminate the potential of issues but to decrease the chance of it occurring. 
              So how can we do that? First, we would want to have a formal process for implementing changes, which starts with a change request. 
-             A change request should contain information about what systems will be impacted, teams impacted, business justification, urgency, steps needed to implement this change, 
-             steps to rollback the implementation of this change, steps to verify the implementation was successful, if there is downtime, how long and when will the change will take place, 
-             and whether it has been tested in a lower environment. Typically before a formal change request to production, there is testing done either in non-production, staging, or quality assessment (QA). 
+             A change request should contain information:
+
+             - What systems will be impacted
+             - Teams impacted by change
+             - Business justification
+             - Urgency
+             - Steps needed to implement this change
+             - Steps to rollback the implementation of this change
+             - Steps to verify the implementation was successful
+             - If there is downtime
+             - How long and when will the change will take place
+             - Has it been tested in a lower environment
+             
+             Typically before a formal change request to production, there is testing done either in non-production, staging, or quality assessment (QA). 
              The reason why environments may vary is due to the financial implications of having each environment running with production. However, you could save more by spending more. 
              Why is this? It’s because changes can cause incidents, which impact customers! After having the change request finished, review with your team the steps and implications of the change. 
              Is it necessary to even implement this? Are these steps going to give us what we want? 
@@ -46,6 +57,3 @@ with change:
              Alright, if your change is now completed and verified, what do you do now? A document that it had gone through successfully and inform impacted teams that it is completed.
 
 """)
-
-with problem:
-    st.write("soon")
