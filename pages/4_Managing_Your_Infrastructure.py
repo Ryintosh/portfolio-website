@@ -29,7 +29,6 @@ with change:
              A stable environment can easily be disrupted by changes as the results may not be known from implementing it. 
              However, the art of change management isn’t to eliminate the potential of issues but to decrease the chance of it occurring. 
              So how can we do that? 
-             
              Typically before a formal change request to production, there is testing done either in non-production, staging, or quality assessment (QA). 
              The reason why environments may vary is due to the financial implications of having each environment running with production. However, you could save more by spending more. 
              Why is this? It’s because changes can cause incidents, which impact customers! After having the change request finished, review with your team the steps and implications of the change. 
@@ -43,7 +42,6 @@ with change:
              Typically it would involve breaking service level agreements with customers or internal services degrading or going down. 
              All you can do when a step fails is roll back because any remedy will have its own potential problems. 
              Alright, if your change is now completed and verified, what do you do now? A document that it had gone through successfully and inform impacted teams that it is completed.
-
              First, we would want to have a formal process for implementing changes, which starts with a change request. A change request should contain information:
 
              - What systems will be impacted
