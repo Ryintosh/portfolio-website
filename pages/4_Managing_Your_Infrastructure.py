@@ -28,19 +28,7 @@ with change:
     st.write("""Change Management is one of the most critical processes in a company. Change is a necessary evil, however, it doesn’t have to be damaging. 
              A stable environment can easily be disrupted by changes as the results may not be known from implementing it. 
              However, the art of change management isn’t to eliminate the potential of issues but to decrease the chance of it occurring. 
-             So how can we do that? First, we would want to have a formal process for implementing changes, which starts with a change request. 
-             A change request should contain information:
-
-             - What systems will be impacted
-             - Teams impacted by change
-             - Business justification
-             - Urgency
-             - Steps needed to implement this change
-             - Steps to rollback the implementation of this change
-             - Steps to verify the implementation was successful
-             - If there is downtime
-             - How long and when will the change will take place
-             - Has it been tested in a lower environment
+             So how can we do that? 
              
              Typically before a formal change request to production, there is testing done either in non-production, staging, or quality assessment (QA). 
              The reason why environments may vary is due to the financial implications of having each environment running with production. However, you could save more by spending more. 
@@ -55,5 +43,18 @@ with change:
              Typically it would involve breaking service level agreements with customers or internal services degrading or going down. 
              All you can do when a step fails is roll back because any remedy will have its own potential problems. 
              Alright, if your change is now completed and verified, what do you do now? A document that it had gone through successfully and inform impacted teams that it is completed.
+
+             First, we would want to have a formal process for implementing changes, which starts with a change request. A change request should contain information:
+
+             - What systems will be impacted
+             - Teams impacted by change
+             - Business justification
+             - Urgency
+             - Steps needed to implement this change
+             - Steps to rollback the implementation of this change
+             - Steps to verify the implementation was successful
+             - If there is downtime
+             - How long and when will the change will take place
+             - Has it been tested in a lower environment
 
 """)
