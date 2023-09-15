@@ -6,7 +6,7 @@ st.write("""
          Managing your infrastructure takes a lot of work, but you know what else does? An incident.
          """)
 
-incident,change,problem= st.tabs(["Incident Management", "Change Management"])
+incident,change =  st.tabs(["Incident Management", "Change Management"])
 
 with incident:
     st.write("""Incident Management is relatively a simple concept, when your services are degrading or down try to bring it back to normal.
