@@ -42,8 +42,8 @@ with change:
              Typically it would involve breaking service level agreements with customers or internal services degrading or going down. 
              All you can do when a step fails is roll back because any remedy will have its own potential problems. 
              Alright, if your change is now completed and verified, what do you do now? A document that it had gone through successfully and inform impacted teams that it is completed.
-             First, we would want to have a formal process for implementing changes, which starts with a change request. A change request should contain information:
-
+             First, we would want to have a formal process for implementing changes, which starts with a change request. A change request should contain information:""")
+    st.write("""
              - What systems will be impacted
              - Teams impacted by change
              - Business justification
